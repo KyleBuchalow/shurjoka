@@ -7,13 +7,13 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
+            background-color: #ebd8d8;
             color: #333;
             text-align: center;
             padding: 20px;
         }
         h1 {
-            color: #6441a5; /* Twitch Lila */
+            color: #077894; 
         }
         iframe {
             border: 2px solid #6441a5;
@@ -25,6 +25,28 @@
             border-radius: 10px;
             padding: 20px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .box {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            width: 100%;
+            max-width: 720px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .vod-link a {
+            display: inline-block;
+            background-color: #755aa5;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .vod-link a:hover {
+            background-color: #503982;
         }
         .crypto-address {
             margin-top: 10px;
@@ -78,7 +100,11 @@
     height="480"
     width="350">
     </iframe>
-    
+
+    <div class="box vod-link">
+        <a href="streamvods.html" target="_blank">Hier findet ihr die VODs!</a>
+    </div>
+
     <div class="donation">
         <p>Wenn ihr dieses Projekt unterstützen wollt und etwas zu den Kosten beitragen wollt könnt ihr das hier machen !</p>
         <div class="crypto-address" onclick="zeigeAdresse('Monero', '83Uum77TzVYFNkw3LmcJmuYrPoRWVL6DKWfwvNxPeLCCCzrhCp64T3pPh2zuj38FnrAnzSUWDuW4sUt3t3TyAGw36iWZvEr')">Monero Adresse</div>
