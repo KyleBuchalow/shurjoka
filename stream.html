@@ -82,6 +82,28 @@
             color: #f00;
             font-weight: bold;
         }
+        .contact {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 720px;
+            margin: 40px auto 0 auto;
+            text-align: center;
+        }
+        .contact p {
+            font-size: 18px;
+            color: #333;
+        }
+        .contact a {
+            color: #6441a5;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .contact a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
@@ -119,6 +141,12 @@
     <div class="popup" id="popup">
         <span class="close" onclick="schließePopup()">X</span>
         <p id="popup-text"></p>
+    </div>
+
+    <div class="contact">
+        <h2>Kontakt</h2>
+        <p>Bei Fragen oder Anfragen könnt ihr uns per E-Mail erreichen:</p>
+        <p><a onclick="zeigeAdresse('E-Mail', 'shurjokafan187@proton.me')">E-Mail</a></p>
     </div>
 
     <script>
